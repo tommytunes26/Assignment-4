@@ -13,6 +13,16 @@ html, body{
     background-color: #e4d2ba;
 }
 
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 50pt;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    text-shadow: 5px 3px 5px #000;
+    padding-top: 26%;
+}
+
 /*Classes--------------------------------------------*/
 
 .navbar {
@@ -29,17 +39,19 @@ html, body{
 
 .container {
     width: 100% !important;
-    max-width: 1530px;
+    max-width: 1500px;
     height: 100%;
     margin-top: -20px;
+    padding: 0;
 }
 
 .page {
     display: block;
     width: 100%;
-    max-width: 1530px;
+    max-width: 1500px;
     height: 100%;
     max-height: 900px;
+    margin-top: -20px;
 }
 
 .welcome {    
