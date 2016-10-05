@@ -1,0 +1,59 @@
+html {/*
+    background: url("../images/something.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;*/
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #e4d2ba;
+}
+
+/*Classes--------------------------------------------*/
+
+.navbar {
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /*remove the gap so it doesnt close*/
+ }
+
+.container {
+    width: 100% !important;
+    max-width: 1530px;
+    height: 100%;
+    margin-top: -20px;
+}
+
+.page {
+    display: block;
+    width: 100%;
+    max-width: 1530px;
+    height: 100%;
+    max-height: 900px;
+}
+
+.welcome {    
+    background-color: #f8db5e;
+}
+
+.cats {    
+    background-color: #f7465b;
+}
+
+.dogs {    
+    background-color: #61e061;
+}
+
+.about {    
+    background-color: #3c50ed;
+}
