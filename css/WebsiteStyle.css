@@ -20,7 +20,22 @@ h1 {
     font-family: 'Pacifico', cursive;
     color: #fff;
     text-shadow: 5px 3px 5px #000;
-    padding-top: 26%;
+    padding-top: 30%;
+    margin: 0;
+}
+
+a, 
+a:visited,
+a:link,
+a:active {
+    text-decoration: inherit;
+}
+a:hover {
+    color: #000;
+    text-shadow: 0 0 20px #fff;
+}
+
+#main {
 }
 
 /*Classes--------------------------------------------*/
@@ -51,7 +66,17 @@ h1 {
     max-width: 1500px;
     height: 100%;
     max-height: 900px;
-    margin-top: -20px;
+    margin-top: 0;
+}
+
+.navigate {
+    display: block;
+    text-align: center;
+    font-family: calibri;
+    font-style: italic;
+    font-size: 30pt;
+    color: #fff;
+    text-shadow: 5px 3px 5px #000;
 }
 
 .welcome {    
@@ -68,4 +93,8 @@ h1 {
 
 .about {    
     background-color: #3c50ed;
+}
+
+.treatment {
+    background-color: #c941fc;
 }
