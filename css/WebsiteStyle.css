@@ -1,10 +1,10 @@
 html {/*
-    background: url("../images/something.jpg") no-repeat center center fixed;
+    background: url("../pics/background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    z-index: -1;*/
+    z-index: -10;*/
 }
 
 html, body{
@@ -43,6 +43,12 @@ a:hover {
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.nav-arrow {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -103,6 +109,22 @@ a:hover {
 
 .dogs {    
     background-color: #61e061;
+    background: url("../pics/dog-look.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+.dogs-service {
+    background-color: #61e061;
+    background: url("../pics/dogvets.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
 }
 
 .about {    
