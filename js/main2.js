@@ -5,13 +5,13 @@
     $(document).ready(function () {
 
         // Init here.
-        var $body = $('body'),
-            $main = $('#main2'),
-            $site = $('html, body'),
+        var //$body = $('body'),
+            $main2 = $('#main2'),
+            //$site = $('html, body'),
             transition = 'fade',
             smoothState;
 
-        smoothState = $main.smoothState({
+        smoothState = $main2.smoothState({
             onBefore: function($anchor, $container) {
                 var current = $('[data-viewport]').first().data('viewport'),
                     target = $anchor.data('target');
@@ -29,8 +29,8 @@
             onStart: {
                 duration: 400,
                 render: function (url, $container) {
-                    $main.attr('data-transition', transition);
-                    $main.addClass('is-exiting');
+                    $main2.attr('data-transition', transition);
+                    $main2.addClass('is-exiting');
                     //$site.animate({scrollTop: 0});
                 }
             },

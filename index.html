@@ -35,20 +35,20 @@
 			<ul class="nav navbar-nav">
 			  <li class="active"><a href="#top">Home</a></li>
 			  <li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#cats">Cats
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#main">Cats
 				<span class="caret"></span></a>
 				<ul class="dropdown-menu">
-				  <li><a href="CatsTreatment.html">Treatments</a></li>
+				  <li><a href="#main">Treatments</a></li>
 				</ul>
 			  </li>
 			  <li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#dogs">Dogs
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#main2">Dogs
 				<span class="caret"></span></a>
 				<ul class="dropdown-menu">
-				  <li><a href="DogsTreatment.html">Treatments</a></li>
+				  <li><a href="#main2">Treatments</a></li>
 				</ul>
 			  </li>
-			  <li><a href="AboutUs.html">About Us</a></li> 
+			  <li><a href="#about">About Us</a></li> 
 			</ul>
 		  </div>
 		</nav>
@@ -62,23 +62,32 @@
             
             <!--Cat transition -->
             <div class="page" id="main" >
-                <div class="sceneElement cats" data-viewport="-1">
+                <div class="sceneElement cats" id="cats" data-viewport="0">
                     <h1>Cats</h1>
-                    <a class="navigate" href="CatsTreatment.html" data-target="0">Treatment</a>
+                    <a class="navigate" href="CatsTreatment.html" data-target="1">Treatment</a>
                 </div>
             </div>
             
             <!--Dog transition -->
-            <div class="dogs page" id="main2" >
-                <div class="sceneElement2" data-viewport="0">
+            <div class="page" id="main2" >
+                <div class="sceneElement dogs" data-viewport="0">
                     <h1>Dogs</h1>
                     <a class="navigate" href="DogsTreatment.html" data-target="1">Treatment</a>
                 </div>
             </div>
+            
+            <!--About -->
             <div class="about page" id="about" >
                 <h1>About</h1>
             </div>
+            
+            <!--Nav to top -->
+            <div class="nav-arrow" type="button">
+                <img src="pics/nav-arrow.png" alt="return to top" />
+            </div>            
 		</div>
+        
+        
         <!-- Smooth State -->
         <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
         <script src="js/jquery.smoothState.min.js"></script>
