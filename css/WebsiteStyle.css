@@ -1,0 +1,182 @@
+html {
+    /*background: url("../pics/background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -10;*/
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    /*background-color: #e4d2ba;*/
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 50pt;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    text-shadow: 5px 3px 5px #000;
+    padding-top: 30%;
+    margin: 0;
+}
+
+h3{
+    width: 100%;
+    font-size: 30pt;
+    font-style: italic; 
+    color: #fff;
+    text-shadow: 5px 3px 5px #000;
+    margin: 0;
+}
+
+p{
+    width: 100%;
+    font-size: 15pt;
+    font-style: italic; 
+    color: #fff;
+    text-shadow: 5px 3px 5px #000;
+    margin: 0;
+}
+
+a, 
+a:visited,
+a:link,
+a:active {
+    text-decoration: inherit;
+}
+a:hover {
+    color: #000;
+    text-shadow: 0 0 20px #fff;
+}
+
+
+/*Classes--------------------------------------------*/
+
+.navbar {
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-arrow {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /*remove the gap so it doesnt close*/
+ }
+
+.container {
+    width: 100% !important;
+    max-width: 1500px;
+    height: 100%;
+    margin-top: -20px;
+    padding: 0;
+}
+
+.page, .sceneElement{
+    display: block;
+    width: 100%;
+    max-width: 1500px;
+    height: 100%;
+    max-height: 900px;
+    margin-top: 0;
+}
+
+.navigate {
+    display: block;
+    text-align: center;
+    font-family: calibri;
+    font-style: italic;
+    font-size: 30pt;
+    color: #fff;
+    text-shadow: 5px 3px 5px #000;
+}
+
+.welcome {    
+    background-color: #f8db5e;
+}
+
+.cats {
+    background-color: #f7465b;
+    background: url("../pics/catsnrow.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+.cat-service {
+    background-color: #f7465b;
+    background: url("../pics/catvets.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+.dogs {    
+    background-color: #61e061;
+    background: url("../pics/dog-look.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+.dogs-service {
+    background-color: #61e061;
+    background: url("../pics/dogvets.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+.service-info{
+    padding-top: 1%;
+    padding-left: 1%;
+    float: left;
+}
+
+.about-us-title{ 
+    padding-top: 1%;
+    padding-right: 1%;
+    float: right;    
+}
+
+.about-us-descript{ 
+   width: 45%;
+   float: right;
+   margin-top: 5%;
+   margin-right: -17%;
+   font-size: 25px;
+}
+
+.price-style{
+    list-style-type: none;
+    color: #fff;
+    font-size: 20pt;
+    text-shadow: 5px 3px 5px #000;
+    font-style: italic; 
+}
+
+.about {    
+    background-color: #3c50ed;
+}
+
+.treatment {
+    background-color: #c941fc;
+}

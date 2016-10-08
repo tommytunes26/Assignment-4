@@ -9,50 +9,98 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-		<!-- Latest compiled JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+        </script>
+        
+        <!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		
 		<!-- CSS for the homepage -->
-		<link rel="stylesheet" type="text/css" href="WebsiteStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/WebsiteStyle.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/smoothState.css">
+        
+        <!-- Google font for h1 -->
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		
 	</head>
 	
 	<body>
-	
-	
-	<nav class="navbar navbar-inverse">
-	  <div class="container-fluid">
-		<div class="navbar-header">
-		  <a class="navbar-brand" href="index.html">Wayside Veterinarian Clinic</a>
+
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="#">Wayside Veterinarian Clinic</a>
+			</div>
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="#top">Home</a></li>
+			  <li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#main">Cats
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+				  <li><a href="#main">Treatments</a></li>
+				</ul>
+			  </li>
+			  <li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#main2">Dogs
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+				  <li><a href="#main2">Treatments</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#about">About Us</a></li> 
+			</ul>
+		  </div>
+		</nav>
+        
+		<!--Insert Sites into these "page" containers-->
+        
+		<div class="container">
+            <div class="welcome page" id="top" >
+                <h1>Welcome to Wayside</h1>
+            </div>
+            
+            <!--Cat transition--> 
+            <div class="cats page" id="main" >
+                <div class="sceneElement" data-viewport="-1">
+                    <h1>Cats</h1>
+                    <a class="navigate" href="CatsTreatment.html" data-target="0">Treatment</a>
+                </div>
+            </div>
+            
+            <!--Dog transition -->
+            <div class="page" id="main2" >
+                <div class="sceneElement dogs-service" data-viewport="1">
+                    <div class = "service-info">
+                        <h3>Heartworms? Not a problem!</h3>
+                        <br/><br/>
+                        <ul class = "price-style">
+                            <li>Heartworm Treatment - $500</li>
+                            <li>Bloodwork Cost - $250</li>
+                            <li>Microchiping - $30</li>
+                            <li>Rabies Vacination - $20</li>
+                            <li>Fecal Exam - $35</li>
+                            <li>Service - $ </li>
+                            <li>Service - $ </li>
+                            <li>Service - $ </li>
+                            <li>Service - $ </li>
+                            <li>Service - $ </li>
+                            <li>Service - $ </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!--About -->
+            <div class="about page" id="about" >
+                <h1>About</h1>
+            </div>
 		</div>
-		<ul class="nav navbar-nav">
-		  <li><a href="index.html">Home</a></li>
-		  <li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Cats
-			<span class="caret"></span></a>
-			<ul class="dropdown-menu">
-			  <li><a href="CatsTreatment.html">Treatments</a></li>
-			</ul>
-		  </li>
-		  <li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Dogs
-			<span class="caret"></span></a>
-			<ul class="dropdown-menu">
-			  <li><a class = "active" href="#">Treatments</a></li>
-			</ul>
-		  </li>
-		  <li><a href= "AboutUs.html">About Us</a></li> 
-		</ul>
-	  </div>
-	</nav>
-	
-	<div class="container">
-			
-	</div>
-	
-		
+        <!-- Smooth State -->
+        <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+        <script src="js/jquery.smoothState.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/main2.js"></script>
 	</body>
 
 </html> 
