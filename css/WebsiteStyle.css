@@ -1,5 +1,5 @@
-html {/*
-    background: url("../pics/background.jpg") no-repeat center center fixed;
+html {
+    /*background: url("../pics/background.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -10,7 +10,7 @@ html {/*
 html, body{
     height: 100%;
     width: 100%;
-    background-color: #e4d2ba;
+    /*background-color: #e4d2ba;*/
 }
 
 h1 {
@@ -21,6 +21,24 @@ h1 {
     color: #fff;
     text-shadow: 5px 3px 5px #000;
     padding-top: 30%;
+    margin: 0;
+}
+
+h3{
+    width: 100%;
+    font-size: 30pt;
+    font-style: italic; 
+    color: #fff;
+    text-shadow: 5px 3px 5px #000;
+    margin: 0;
+}
+
+p{
+    width: 100%;
+    font-size: 15pt;
+    font-style: italic; 
+    color: #fff;
+    text-shadow: 5px 3px 5px #000;
     margin: 0;
 }
 
@@ -125,6 +143,34 @@ a:hover {
     -o-background-size: cover;
     background-size: cover;
     z-index: -1;
+}
+
+.service-info{
+    padding-top: 1%;
+    padding-left: 1%;
+    float: left;
+}
+
+.about-us-title{ 
+    padding-top: 1%;
+    padding-right: 1%;
+    float: right;    
+}
+
+.about-us-descript{ 
+   width: 45%;
+   float: right;
+   margin-top: 5%;
+   margin-right: -17%;
+   font-size: 25px;
+}
+
+.price-style{
+    list-style-type: none;
+    color: #fff;
+    font-size: 20pt;
+    text-shadow: 5px 3px 5px #000;
+    font-style: italic; 
 }
 
 .about {    

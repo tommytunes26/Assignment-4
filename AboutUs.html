@@ -1,58 +1,77 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
 	
 	<head>
-				
-		<title> Wayside Veterinarian Clinic: About Us </title>
+		
+		<title> Wayside Veterinarian Clinic: Home </title>
 		
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-		<!-- Latest compiled JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+        </script>
+        
+        <!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		
 		<!-- CSS for the homepage -->
-		<link rel="stylesheet" type="text/css" href="WebsiteStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/WebsiteStyle.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/smoothState.css">
+        
+        <!-- Google font for h1 -->
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		
 	</head>
 	
-	<body>
-	
-	
-	<nav class="navbar navbar-inverse">
-	  <div class="container-fluid">
-		<div class="navbar-header">
-		  <a class="navbar-brand" href="index.html">Wayside Veterinarian Clinic</a>
+    <body style = "background: url('/pics/AboutUsBackground.png') no-repeat center ">
+        
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="#">Wayside Veterinarian Clinic</a>
+			</div>
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="#top">Home</a></li>
+			  <li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#main">Cats
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+				  <li><a href="#main">Treatments</a></li>
+				</ul>
+			  </li>
+			  <li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#main2">Dogs
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+				  <li><a href="#main2">Treatments</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#about">About Us</a></li> 
+			</ul>
+		  </div>
+		</nav>
+                
+		<div class="container">
+            <div class="sceneElement" data-viewport="1">
+                <div class = "about-us-title">
+                    <h3>Who are we?</h3>
+                    <br/><br>
+                </div>
+                
+                <div>
+                  <p class = "about-us-descript"> Wayside Veterinarian Clinic is Veterinarian Clinic that specializes in
+                  taking care of all animal types. Ranging from everyday house animals like cats and dogs, to more exotic
+                  animals such as bearded dragons and parrots. We have been in business since 2000, and our customers keep 
+                  coming back for our quality care and competive pricing. If you would like to schedule and appointment with us,
+                  please contact 281-779-5168 to schedule an appointment. We are open all days between 9AM to 6PM.</p>
+                </div>
+   
+            </div>
 		</div>
-		<ul class="nav navbar-nav">
-		  <li><a href="index.html">Home</a></li>
-		  <li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Cats
-			<span class="caret"></span></a>
-			<ul class="dropdown-menu">
-			  <li><a href="CatsTreatment.html">Treatments</a></li>
-			</ul>
-		  </li>
-		  <li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Dogs
-			<span class="caret"></span></a>
-			<ul class="dropdown-menu">
-			  <li><a href="DogsTreatment.html">Treatments</a></li>
-			</ul>
-		  </li>
-		  <li><a class = "active" href="">About Us</a></li> 
-		</ul>
-	  </div>
-	</nav>
-	
-	<div class="container">
-			
-	</div>
-	
-		
+        
+    
 	</body>
 
 </html> 
