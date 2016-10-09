@@ -30,7 +30,7 @@
 		<nav class="navbar navbar-inverse">
 		  <div class="container-fluid">
 			<div class="navbar-header">
-			  <a class="navbar-brand" href="#">Wayside Veterinarian Clinic</a>
+			  <a class="navbar-brand" href="index.html">Wayside Veterinarian Clinic</a>
 			</div>
 			<ul class="nav navbar-nav">
 			  <li class="active"><a href="#top">Home</a></li>
@@ -87,20 +87,41 @@
             <div class="page" id="main2" >
                 <div class="sceneElement dogs" data-viewport="-1">
                     <h1>Dogs</h1>
-                    <a class="navigate" href="DogsTreatment.html" data-target="1">Treatment</a>
+                    <a class="navigate" href="DogsTreatment.html" data-target="-1">Treatment</a>
                 </div>
             </div>
             
             <!--About -->
-            <div class="about page" id="about" >
-                <h1>About</h1>
+            <div class="page" id="main3" >
+                <div class="sceneElement about" data-viewport="0">
+                    <a class="navigate" href="AboutUs-Slide.html" data-target="1"><h1 class="clickable">About Us</h1></a>
+                </div>
             </div>
+            
 		</div>
         <!-- Smooth State -->
         <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
         <script src="js/jquery.smoothState.min.js"></script>
         <script src="js/main.js"></script>        
         <script src="js/main2.js"></script>
+        <script src="js/main3.js"></script>
+        
+        <script> //Nav Fade---------------------|
+        
+        $(document).ready(function () {
+        $( "#toTop" ).fadeTo(0, 0.3);    
+        });
+        
+        $( "#toTop" ).mouseleave(function() {
+            $(this).fadeTo("slow", 0.3);    
+        });       
+
+        $( "#toTop" ).mouseenter(function() {
+            $(this).fadeTo("slow", 1);    
+        }); 
+            
+        </script>
+        
 	</body>
 
 </html> 

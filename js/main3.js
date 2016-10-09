@@ -1,17 +1,17 @@
- (function ($) {
+(function ($) {
 
     'use strict';
 
     $(document).ready(function () {
 
         // Init here.
-        var $body = $('body'),
-            $main = $('#main'),
-            $site = $('html, body'),
+        var //$body = $('body'),
+            $main3 = $('#main3'),
+            //$site = $('html, body'),
             transition = 'fade',
             smoothState;
 
-        smoothState = $main.smoothState({
+        smoothState = $main3.smoothState({
             onBefore: function($anchor, $container) {
                 var current = $('[data-viewport]').first().data('viewport'),
                     target = $anchor.data('target');
@@ -29,8 +29,8 @@
             onStart: {
                 duration: 400,
                 render: function (url, $container) {
-                    $main.attr('data-transition', transition);
-                    $main.addClass('is-exiting');
+                    $main3.attr('data-transition', transition);
+                    $main3.addClass('is-exiting');
                     //$site.animate({scrollTop: 0});
                 }
             },
@@ -46,23 +46,3 @@
     });
 
 }(jQuery));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

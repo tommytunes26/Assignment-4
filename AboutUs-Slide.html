@@ -1,9 +1,9 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
 	
 	<head>
 		
-		<title> Wayside Veterinarian Clinic: Dogs - Treatment Options </title>
+		<title> Wayside Veterinarian Clinic: About Us </title>
 		
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -60,52 +60,56 @@
                 <h1>Welcome to Wayside</h1>
             </div>
             
-            <!--Cat transition--> 
-            <div class="cats page" id="main" >
-                <div class="sceneElement" data-viewport="-1">
+            <!--Cat transition -->
+            <div class="page" id="main" >
+                <div class="sceneElement cats" id="cats" data-viewport="0">
                     <h1>Cats</h1>
-                    <a class="navigate" href="CatsTreatment.html" data-target="0">Treatment</a>
+                    <a class="navigate" href="CatsTreatment.html" data-target="1">Treatment</a>
                 </div>
             </div>
             
             <!--Dog transition -->
             <div class="page" id="main2" >
-                <div class="sceneElement dogs-service" data-viewport="1">
-                    <div class = "service-info">
-                        <h3>Heartworms? Not a problem!</h3>
-                        <br/><br/>
-                        <ul class = "price-style">
-                            <li>Heartworm Treatment - $500</li>
-                            <li>Bloodwork Cost - $250</li>
-                            <li>Microchiping - $30</li>
-                            <li>Rabies Vacination - $20</li>
-                            <li>Fecal Exam - $35</li>
-                            <li>Service - $ </li>
-                            <li>Service - $ </li>
-                            <li>Service - $ </li>
-                            <li>Service - $ </li>
-                            <li>Service - $ </li>
-                            <li>Service - $ </li>
-                        </ul>
-                    </div>
+                <div class="sceneElement dogs" data-viewport="0">
+                    <h1>Dogs</h1>
+                    <a class="navigate" href="DogsTreatment.html" data-target="1">Treatment</a>
                 </div>
             </div>
             
             <!--About -->
             <div class="page" id="main3" >
-                <div class="sceneElement about" data-viewport="0">
-                    <a class="navigate" href="AboutUs-Slide.html" data-target="1"><h1 class="clickable">About Us</h1></a>
+                <div class="sceneElement about-slide" data-viewport="1">
+                <div class = "about-us-title">
+                    <h3>Who are we?</h3>
+                    <br/><br>
+                </div>
+                
+                <div>
+                  <p class = "about-us-descript"> Wayside Veterinarian Clinic is Veterinarian Clinic that specializes in
+                  taking care of all animal types. Ranging from everyday house animals like cats and dogs, to more exotic
+                  animals such as bearded dragons and parrots. We have been in business since 2000, and our customers keep 
+                  coming back for our quality care and competive pricing. If you would like to schedule and appointment with us,
+                  please contact 281-779-5168 to schedule an appointment. We are open all days between 9AM to 6PM.</p>
+                </div>
+   
+            </div>
                 </div>
             </div>
             
+            <!--Nav to top -->
+            <div class="nav-arrow" type="button">
+                <img src="pics/nav-arrow.png" alt="return to top" />
+            </div>            
 		</div>
+        
+        
         <!-- Smooth State -->
         <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
         <script src="js/jquery.smoothState.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/main.js"></script>        
         <script src="js/main2.js"></script>
         <script src="js/main3.js"></script>
-        
+    
         <script> //Nav Fade---------------------|
         
         $(document).ready(function () {
@@ -121,7 +125,7 @@
         }); 
             
         </script>
-        
+    
 	</body>
 
 </html> 
