@@ -214,3 +214,36 @@
     -webkit-animation-name: moveOutToLeft;
     animation-name: moveOutToLeft;
 }
+
+
+/*For 2nd page---------------------------------------*/
+
+#main3[data-transition=fade] .sceneElement {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+#main3[data-transition=fade].is-exiting .sceneElement {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+#main3[data-transition=moveleft] .sceneElement {
+    -webkit-animation-name: moveInFromLeft;
+    animation-name: moveInFromLeft;
+}
+
+#main3[data-transition=moveleft].is-exiting .sceneElement {
+    -webkit-animation-name: moveOutToRight;
+    animation-name: moveOutToRight;
+}
+
+#main3[data-transition=moveright] .sceneElement {
+    -webkit-animation-name: moveInFromRight;
+    animation-name: moveInFromRight;
+}
+
+#main3[data-transition=moveright].is-exiting .sceneElement {
+    -webkit-animation-name: moveOutToLeft;
+    animation-name: moveOutToLeft;
+}

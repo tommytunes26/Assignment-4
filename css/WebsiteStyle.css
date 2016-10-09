@@ -10,6 +10,7 @@ html {
 html, body{
     height: 100%;
     width: 100%;
+    background: url('../pics/background.jpg') no-repeat center center fixed;
     /*background-color: #e4d2ba;*/
 }
 
@@ -29,7 +30,7 @@ h3{
     font-size: 30pt;
     font-style: italic; 
     color: #fff;
-    text-shadow: 5px 3px 5px #000;
+    text-shadow: 0 0 15px #000;
     margin: 0;
 }
 
@@ -38,7 +39,7 @@ p{
     font-size: 15pt;
     font-style: italic; 
     color: #fff;
-    text-shadow: 5px 3px 5px #000;
+    text-shadow: 0 0 10px #000;
     margin: 0;
 }
 
@@ -169,12 +170,28 @@ a:hover {
     list-style-type: none;
     color: #fff;
     font-size: 20pt;
-    text-shadow: 5px 3px 5px #000;
+    text-shadow: 0 0 10px #000;
     font-style: italic; 
 }
 
 .about {    
     background-color: #3c50ed;
+    background: url("../pics/cats-and-dogs-group.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+.about-slide {
+    background-color: #61e061;
+    background: url("../pics/AboutUsBackground.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
 }
 
 .treatment {
