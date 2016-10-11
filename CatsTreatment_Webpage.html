@@ -27,7 +27,7 @@
 	
 	<body>
 
-		<nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse">
 		  <div class="container-fluid">
 			<div class="navbar-header">
 			  <a class="navbar-brand" href="index.html">Wayside Veterinarian Clinic</a>
@@ -38,7 +38,7 @@
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#main">Cats
 				<span class="caret"></span></a>
 				<ul class="dropdown-menu">
-				  <li><a href="CatsTreatment_Webpage.html">Treatments</a></li>
+				  <li class = "active"><a href="CatsTreatment_Webpage.html">Treatments</a></li>
 				</ul>
 			  </li>
 			  <li class="dropdown">
@@ -56,14 +56,10 @@
 		<!--Insert Sites into these "page" containers-->
         
 		<div class="container">
-            <div class="welcome page" id="top" >
-                <h1>Welcome to Wayside</h1>
-            </div>
             
-            <!--Cat transition -->
-            <div class="page" id="main">
-                <div class="sceneElement cat-service" data-viewport="1">
-                     <div class = "service-info">
+        <div class="page" id="main">
+            <div class="sceneElement" data-viewport="1">
+                    <div class = "service-info">
                         <h3>Cat got your tongue? Not anymore!</h3>
                         <br/><br/>
                         <ul class = "price-style">
@@ -82,46 +78,8 @@
                     </div>
                 </div>
             </div>
+        </div>
             
-            <!--Dog transition -->
-            <div class="page" id="main2" >
-                <div class="sceneElement dogs" data-viewport="-1">
-                    <h1>Dogs</h1>
-                    <a class="navigate" href="DogsTreatment.html" data-target="-1">Treatment</a>
-                </div>
-            </div>
-            
-            <!--About -->
-            <div class="page" id="main3" >
-                <div class="sceneElement about" data-viewport="0">
-                    <a class="navigate" href="AboutUs-Slide.html" data-target="1"><h1 class="clickable">About Us</h1></a>
-                </div>
-            </div>
-            
-		</div>
-        <!-- Smooth State -->
-        <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-        <script src="js/jquery.smoothState.min.js"></script>
-        <script src="js/main.js"></script>        
-        <script src="js/main2.js"></script>
-        <script src="js/main3.js"></script>
-        
-        <script> //Nav Fade---------------------|
-        
-        $(document).ready(function () {
-        $( "#toTop" ).fadeTo(0, 0.3);    
-        });
-        
-        $( "#toTop" ).mouseleave(function() {
-            $(this).fadeTo("slow", 0.3);    
-        });       
-
-        $( "#toTop" ).mouseenter(function() {
-            $(this).fadeTo("slow", 1);    
-        }); 
-            
-        </script>
-        
 	</body>
 
 </html> 
