@@ -25,7 +25,8 @@
 		
 	</head>
 	
-	<body>
+	<body style =  "background: url('../pics/dogvets.jpg') no-repeat center center; background-size: 100%;
+    background-repeat: no-repeat;  padding-bottom: 100px">
 
 		<nav class="navbar navbar-inverse">
 		  <div class="container-fluid">
@@ -56,21 +57,10 @@
 		<!--Insert Sites into these "page" containers-->
         
 		<div class="container">
-            <div class="welcome page" id="top" >
-                <h1>Welcome to Wayside</h1>
-            </div>
-            
-            <!--Cat transition--> 
-            <div class="cats page" id="main" >
-                <div class="sceneElement" data-viewport="-1">
-                    <h1>Cats</h1>
-                    <a class="navigate" href="CatsTreatment.html" data-target="0">Treatment</a>
-                </div>
-            </div>
-            
+       
             <!--Dog transition -->
             <div class="page" id="main2" >
-                <div class="sceneElement dogs-service" data-viewport="1">
+                <div class="sceneElement" data-viewport="1">
                     <div class = "service-info">
                         <h3>Heartworms? Not a problem!</h3>
                         <br/><br/>
@@ -90,37 +80,7 @@
                     </div>
                 </div>
             </div>
-            
-            <!--About -->
-            <div class="page" id="main3" >
-                <div class="sceneElement about" data-viewport="0">
-                    <a class="navigate" href="AboutUs-Slide.html" data-target="1"><h1 class="clickable">About Us</h1></a>
-                </div>
-            </div>
-            
-		</div>
-        <!-- Smooth State -->
-        <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-        <script src="js/jquery.smoothState.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/main2.js"></script>
-        <script src="js/main3.js"></script>
-        
-        <script> //Nav Fade---------------------|
-        
-        $(document).ready(function () {
-        $( "#toTop" ).fadeTo(0, 0.3);    
-        });
-        
-        $( "#toTop" ).mouseleave(function() {
-            $(this).fadeTo("slow", 0.3);    
-        });       
-
-        $( "#toTop" ).mouseenter(function() {
-            $(this).fadeTo("slow", 1);    
-        }); 
-            
-        </script>
+        </div>
         
 	</body>
 
